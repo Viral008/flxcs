@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flxcs | Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #ffffff, #666666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="text-white overflow-hidden">
+
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-900/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-900/10 rounded-full blur-[120px]"></div>
+    </div>
+
+    <main class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6">
+        
+        <div class="mb-12">
+            <h1 class="text-4xl font-black tracking-tighter uppercase italic">flxcs<span class="text-blue-500">.</span></h1>
+        </div>
+
+        <div class="text-center max-w-2xl">
+            <h2 class="text-6xl md:text-8xl font-black tracking-tight mb-6 gradient-text">
+                EVOLVING SOON.
+            </h2>
+            <p class="text-gray-400 text-lg md:text-xl font-light mb-10 tracking-wide">
+                We're building the future of digital motion. <br> 
+                Something fast, fluid, and focused is on the way.
+            </p>
+        </div>
+
+        <div class="glass p-2 rounded-2xl flex flex-col md:flex-row gap-2 w-full max-w-md">
+            <input type="email" placeholder="Enter your email" 
+                class="bg-transparent border-none outline-none px-4 py-3 w-full text-white placeholder-gray-500 focus:ring-0">
+            <button class="bg-white text-black font-bold px-8 py-3 rounded-xl hover:bg-blue-500 hover:text-white transition-all duration-300">
+                NOTIFY ME
+            </button>
+        </div>
+
+        <div class="mt-16 flex gap-8 text-sm font-bold tracking-widest text-gray-500 uppercase">
+            <a href="#" class="hover:text-white transition-colors">Twitter</a>
+            <a href="#" class="hover:text-white transition-colors">Instagram</a>
+            <a href="#" class="hover:text-white transition-colors">GitHub</a>
+        </div>
+
+    </main>
+
+    <script>
+        console.log("flxcs landing page ready.");
+    </script>
+</body>
+</html>
